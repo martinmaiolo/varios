@@ -85,4 +85,48 @@ Visit-time: 0200-0745
 # Un documento CADA  30 minutos
 Request-rate: 1/30m
 
+<a><h1 id="emailLink" style="color:red">Email us here</h1></a> 
 
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+<p class=""><span class="s1">with 35 years of law experience</span></p>
+HVoX@f0OLmtrtA8D@p
+
+body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+
+
+* {  
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+            -webkit-font-smoothing: antialiased;
+            font-weight: unset;
+        }
+	
+define('WP_DEBUG', 'false');
+define('WP_HTTP_BLOCK_EXTERNAL', 'false');
+define('FS_METHOD', 'direct');
+define('DISABLE_WP_CRON', 'true');
+define('WP_CACHE', 'true');
+define('WP_ALLOW_REPAIR', 'true');
+require_once(ABSPATH . 'wp-settings.php');
+add_filter('auto_update_plugin', '__return_false');
+add_filter('auto_update_theme', '__return_false');
+define('WP_AUTO_UPDATE_CORE', 'minor' );
