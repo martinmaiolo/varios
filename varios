@@ -1,0 +1,88 @@
+a.enlaceblanco {
+    color: #FFFFFF!important;
+    border-bottom: 1px dashed;
+    padding-bottom: 3px;
+}
+
+/* Performance */
+define( 'WP_CACHE', true );
+define( 'COMPRESS_CSS', true );
+define( 'COMPRESS_SCRIPTS', true );
+define( 'CONCATENATE_SCRIPTS', true );
+define( 'ENFORCE_GZIP', true );
+
+<!-- Browser Color - Chrome, Firefox OS, Opera -->
+<meta name="theme-color" content="#ff00ff"> 
+<!-- Browser Color - Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#ff00ff"> 
+<!-- Browser Color - iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#ff00ff">
+
+### marker FAVICON start ###
+RewriteRule favicon\.ico$ - [E=cache-control:max-age=86400]
+### marker FAVICON end ###
+
+<meta name="geo.region" content="ES-MD" />
+<meta name="geo.placename" content="Madrid" />
+<meta name="geo.position" content="40.416705;-3.703582" />
+<meta name="ICBM" content="40.416705, -3.703582" />
+
+# BEGIN Really_Simple_SSL_SECURITY_HEADERS
+<IfModule mod_headers.c>
+Header always set X-XSS-Protection "1; mode=block"
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy: "no-referrer-when-downgrade"
+</IfModule>
+
+function deregister_jsembed(){
+  wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'deregister_jsembed' );
+
+<meta class="swiftype" name="keywords" data-type="string" content="diseño web">
+<meta class="swiftype" name="keywords" data-type="string" content="desarrollo de paginas web">
+<meta class="swiftype" name="keywords" data-type="string" content="barcelona">
+
+* {
+	-moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Google Sans", Arial, sans-serif;
+        font-weight: normal;
+        font-size: 100%;
+}
+
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+
+<link rel="preconnect" href="https://www.facebook.com/" crossorigin>
+<link rel="preconnect" href="https://connect.facebook.net/" crossorigin>
+<link rel="preconnect" href="https://maps.googleapis.com/" crossorigin>
+<link rel="dns-prefetch" href="//pixeldigitalacademy.com">
+
+html {
+    font-family: Whyte, sans-serif;
+    font-style: normal;
+    font-size: var(--t2);
+    line-height: 1.4;
+    color: rgb(40, 40, 40);
+    word-break: break-word;
+    box-sizing: border-box;
+    text-rendering: optimizelegibility;
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+Host: https://www.nerion.es
+
+#para evitar esta sobrecarga, usar Crawl-delay: tiempo entre cada acceso del robot.
+Crawl-delay: 120
+
+# Permitir trabajar a los botsde  2 am a 7:45 am
+# Las horas son siempre Greenwitch
+ 
+Visit-time: 0200-0745  
+ 
+# Un documento CADA  30 minutos
+Request-rate: 1/30m
+
+
